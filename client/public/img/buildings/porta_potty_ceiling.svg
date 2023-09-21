@@ -5,8 +5,31 @@
    width="82.207619mm"
    version="1.1"
    id="svg16"
+   sodipodi:docname="porta_potty_ceiling.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.53697721"
+     inkscape:cx="243.02707"
+     inkscape:cy="399.45829"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg16" />
   <defs
      id="defs20" />
   <g
@@ -48,4 +71,16 @@
        id="path20"
        style="mix-blend-mode:normal;fill-rule:nonzero;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0" />
   </g>
+  <rect
+     style="fill:#552200;stroke-width:0.264583"
+     id="rect1"
+     width="79.089256"
+     height="97.903435"
+     x="1.5678486"
+     y="1.9162593" />
+  <path
+     style="fill:#2b1100;stroke-width:0.465569"
+     d="M 0,191.3489 V 0.23278455 h 155.2673 155.26729 l 0.0432,23.74402445 c 0.0237,13.059213 0.0432,88.271901 0.0432,167.139311 0,78.8674 -0.0194,154.18484 -0.0432,167.37209 l -0.0432,23.97681 H 155.2673 0 Z m 304.94776,0.93114 V 7.2163211 H 155.2673 5.5868292 V 192.28004 377.34376 H 155.2673 304.94776 Z"
+     id="path1"
+     transform="scale(0.26458333)" />
 </svg>

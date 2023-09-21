@@ -173,11 +173,11 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             idString: "pine_tree",
             name: "Pine Tree",
             material: "tree",
-            health: 180,
+            health: 0,
             scale: {
-                spawnMin: 0.9,
-                spawnMax: 1.1,
-                destroy: 0.75
+                spawnMin: 0,
+                spawnMax: 0,
+                destroy: 0
             },
             hitbox: new CircleHitbox(7),
             spawnHitbox: new CircleHitbox(15),
@@ -188,11 +188,11 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             idString: "birch_tree",
             name: "Birch Tree",
             material: "tree",
-            health: 240,
+            health: 0,
             scale: {
-                spawnMin: 0.9,
-                spawnMax: 1,
-                destroy: 0.75
+                spawnMin: 0,
+                spawnMax: 0,
+                destroy: 0
             },
             hitbox: new CircleHitbox(5.5),
             spawnHitbox: new CircleHitbox(15),

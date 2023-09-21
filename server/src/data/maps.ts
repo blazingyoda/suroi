@@ -51,23 +51,23 @@ export const Maps: Record<string, MapDefinition> = {
         height: 1024,
         buildings: {
             refinery: 1,
-            warehouse: 4,
-            house: 4,
-            porta_potty: 10
+            warehouse: 3,
+            house: 0,
+            porta_potty: 6
         },
         obstacles: {
-            oil_tank: 6,
-            regular_crate: 150,
-            oak_tree: 140,
-            pine_tree: 12,
-            birch_tree: 16,
-            rock: 140,
-            bush: 85,
-            blueberry_bush: 20,
-            barrel: 70,
-            super_barrel: 20,
+            oil_tank: 4,
+            regular_crate: 95,
+            oak_tree: 80,
+            pine_tree: 0,
+            birch_tree: 0,
+            rock: 200,
+            bush: 0,
+            blueberry_bush: 0,
+            barrel: 71,
+            super_barrel: 21,
             melee_crate: 1,
-            gold_rock: 1,
+            gold_rock: 2,
             flint_stone: 1
         },
         specialObstacles: {
@@ -93,8 +93,8 @@ export const Maps: Record<string, MapDefinition> = {
             { name: "Takedown", position: v(0.14, 0.88) },
             { name: "Lavlandet", position: v(0.88, 0.12) },
             { name: "Noskin Narrows", position: v(0.82, 0.88) },
-            { name: "Mt. Sanger", position: v(0.5, 0.3) },
-            { name: "Deepwood", position: v(0.5, 0.7) }
+            { name: "Mt. Kraines", position: v(0.5, 0.3) },
+            { name: "Spongebob", position: v(0.5, 0.7) }
         ]
     },
     debug: {
