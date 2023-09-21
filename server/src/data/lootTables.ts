@@ -47,6 +47,15 @@ export const LootTables: Record<string, LootTable> = {
             { tier: "special_scopes", weight: 0.3 }
         ]
     },
+	flint_stone: {
+        min: 1,
+        max: 1,
+        loot: [
+			{ item: "15x_scope", weight: 1 },
+            { item: "basic_outfit", weight: 1 },
+			{ item: "stoner_63", weight: 1 }
+        ]
+    },
     melee_crate: {
         min: 2,
         max: 2,
@@ -183,13 +192,12 @@ export const LootTables: Record<string, LootTable> = {
         ]
     },
     gun_mount: {
-        min: 2,
-        max: 2,
+        min: 1,
+        max: 1,
         loot: [
-            { item: "mcx_spear", weight: 1 },
-			{ item: "8x_scope", weight: 0.5 }
+            { item: "mcx_spear", weight: 1 }
         ]
-    }
+	},	
 };
 
 export const LootTiers: Record<string, WeightedLoot[]> = {
@@ -201,6 +209,7 @@ export const LootTiers: Record<string, WeightedLoot[]> = {
         { item: "m16a4", weight: 0.1 },
         { item: "mcx_spear", weight: 0.1 },
         { item: "sr25", weight: 0.5 },
+		{ item: "svd", weight: 0.5 },
         { item: "mini14", weight: 0.5 },
         { item: "vss", weight: 0.55},
         { item: "mosin", weight: 0.45 },
@@ -220,15 +229,15 @@ export const LootTiers: Record<string, WeightedLoot[]> = {
     equipment: [
         { item: "hard_hat", weight: 1 },
         { item: "m1_helmet", weight: 0.3 },
-        { item: "tactical_helmet", weight: 0.1 },
+        { item: "tactical_helmet", weight: 0.01 },
 
         { item: "basic_vest", weight: 1 },
         { item: "bulletproof_vest", weight: 0.3 },
-        { item: "tactical_vest", weight: 0.1 },
+        { item: "tactical_vest", weight: 0.01 },
 
         { item: "satchel", weight: 1 },
         { item: "regular_backpack", weight: 0.3 },
-        { item: "tactical_backpack", weight: 0.1 }
+        { item: "tactical_backpack", weight: 0.01 }
     ],
     ammo: [
         { item: "556mm", count: 60, weight: 1 },
@@ -238,11 +247,12 @@ export const LootTiers: Record<string, WeightedLoot[]> = {
     special_guns: [
         { item: "micro_uzi", weight: 0.50 },
         { item: "mp40", weight: 0.50 },
-        { item: "saf_200", weight: 0.75 },
+        { item: "saf_200", weight: 0.50 },
         { item: "vss", weight: 0.59 },
         { item: "m16a4", weight: 0.5 },
         { item: "g19", weight: 0.000000001 },
-        { item: "sr25", weight: 0.69 },
+        { item: "sr25", weight: 0.69 },    	
+		{ item: "svd", weight: 0.69 },
         { item: "mini14", weight: 0.69 },
         { item: "mcx_spear", weight: 0.29 },
         { item: "mosin", weight: 0.5 },

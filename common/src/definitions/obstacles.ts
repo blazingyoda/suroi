@@ -219,8 +219,8 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             idString: "flint_stone",
             name: "Flint Stone",
             material: "stone",
-            health: 200,
-            indestructible: true,
+            health: 11000,
+            indestructible: false,
             noResidue: true,
             scale: {
                 spawnMin: 1.0,

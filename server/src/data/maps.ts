@@ -62,7 +62,7 @@ export const Maps: Record<string, MapDefinition> = {
             pine_tree: 0,
             birch_tree: 0,
             rock: 200,
-            bush: 0,
+            bush: 100,
             blueberry_bush: 0,
             barrel: 71,
             super_barrel: 21,

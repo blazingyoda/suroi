@@ -302,6 +302,43 @@ export const Guns: GunDefinition[] = [
             tracerLength: 2.5
         }
     },
+	{
+        idString: "svd",
+        name: "SVD-63",
+        itemType: ItemType.Gun,
+        ammoType: "762mm",
+        ammoSpawnAmount: 30,
+        capacity: 10,
+        reloadTime: 2.5,
+        singleReload: false,
+        fireDelay: 200,
+        switchDelay: 900,
+        speedMultiplier: 0.9,
+        recoilMultiplier: 0.7,
+        recoilDuration: 140,
+        fireMode: FireMode.Single,
+        shotSpread: 1.3,
+        moveSpread: 2.5,
+        canQuickswitch: true,
+        length: 11.6,
+        fists: {
+            left: v(65, 7),
+            right: v(145, 2),
+            animationDuration: 100
+        },
+        image: { position: v(105, 4) },
+        particles: {
+            position: v(4, 0.6)
+        },
+        ballistics: {
+            damage: 45,
+            obstacleMultiplier: 1,
+            speed: 0.30,
+            maxDistance: 250,
+            tracerWidth: 1.0,
+            tracerLength: 2.5
+        }
+    },
     {
         idString: "tango_51",
         name: "Tango 51",
