@@ -68,7 +68,8 @@ export const Maps: Record<string, MapDefinition> = {
             super_barrel: 21,
             melee_crate: 1,
             gold_rock: 2,
-            flint_stone: 1
+            flint_stone: 1,
+            porta_potty_back_wall: 200
         },
         specialObstacles: {
             oil_tank: {
