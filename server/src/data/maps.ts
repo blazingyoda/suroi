@@ -90,11 +90,11 @@ export const Maps: Record<string, MapDefinition> = {
             ground_loot: 40
         },
         places: [
-            { name: "Banana", position: v(0.14, 0.12) },
-            { name: "Takedown", position: v(0.14, 0.88) },
-            { name: "Lavlandet", position: v(0.88, 0.12) },
-            { name: "Noskin Narrows", position: v(0.82, 0.88) },
-            { name: "Mt. Kraines", position: v(0.5, 0.3) },
+            { name: "Solemm Scavaging", position: v(0.14, 0.12) },
+            { name: "Takedown Turf", position: v(0.14, 0.88) },
+            { name: "Washed Windwalk", position: v(0.88, 0.12) },
+            { name: "Martydom Mayhem", position: v(0.82, 0.88) },
+            { name: "Closer Cleves", position: v(0.5, 0.3) },
             { name: "Spongebob", position: v(0.5, 0.7) }
         ]
     },
