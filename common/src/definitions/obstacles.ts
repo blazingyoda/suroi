@@ -251,23 +251,6 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             particleVariations: 2,
             depth: 6
         },
-		{
-            idString: "fat_bush",
-            name: "Fat bush",
-            material: "bush",
-            health: 300,
-            scale: {
-                spawnMin: 10,
-                spawnMax: 10,
-                destroy: 0.8
-            },
-            hitbox: new CircleHitbox(4.2),
-            noCollisions: true,
-            rotationMode: RotationMode.Full,
-            variations: 2,
-            particleVariations: 2,
-            depth: 6
-        },
         {
             idString: "blueberry_bush",
             name: "Blueberry Bush",
@@ -829,7 +812,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 spawnMax: 1.0,
                 destroy: 0.9
             },
-            hideOnMap: true,
+            hideOnMap: false,
             hitbox: new RectangleHitbox(v(-6.4, -0.8), v(6.4, 0.8)),
             rotationMode: RotationMode.Limited,
             isWall: true,
