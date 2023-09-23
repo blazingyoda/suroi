@@ -17,13 +17,13 @@ We've also began experimenting with a new, lighter form of transporting oil, the
 
 <h3>New features & changes</h3>
 <ul>
-  <li>Surviv.io's iconic savannah mode is back in all of it's glory! This includes:</li>
+  <li>Surviv.io's iconic savannah mode is back in all of it's glory! This includes: </li>
   <li>No More houses.</li>
   <li>The return of the SVD-63! (DMR). </li>
-  <li>Less tree's, more rocks.</li>
-  <li>Surviv.io savannah mode weapons only.</li>
+  <li>Less tree's, more rocks. </li>
+  <li>Surviv.io savannah mode weapons only. </li>
 </ul>
 
-Special thanks to Ukraines dude and Jason, we made this thing lol
+Special thanks to Ukraines dude and Jason, we made this thing lol`
     },
 ];
