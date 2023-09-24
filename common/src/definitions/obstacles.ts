@@ -251,6 +251,22 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             particleVariations: 2,
             depth: 6
         },
+		{
+            idString: "big_tree",
+            name: "big tree",
+            material: "tree",
+            health: 500,
+            scale: {
+                spawnMin: 1,
+                spawnMax: 1,
+                destroy: 0.65
+            },
+            hitbox: new CircleHitbox(13),
+            spawnHitbox: new CircleHitbox(20),
+            rotationMode: RotationMode.Full,
+            particleVariations: 2,	
+			depth: 7
+        },
         {
             idString: "blueberry_bush",
             name: "Blueberry Bush",

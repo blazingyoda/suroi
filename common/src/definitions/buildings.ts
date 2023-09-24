@@ -134,6 +134,56 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
         ]
     },
     {
+        idString: "Kopje",
+        name: "Kopje patch",
+        spawnHitbox: new RectangleHitbox(v(-10, -12), v(10, 20)),
+        ceilingHitbox: new RectangleHitbox(v(-7, -9), v(7, 9)),
+        scopeHitbox: new RectangleHitbox(v(-7, -9), v(7, 9)),
+        floorImages: [{
+            key: "porta_potty_floor",
+            position: v(0, 1.5)
+        }],
+        ceilingImages: [{
+            key: "porta_potty_ceiling",
+            position: v(0, 0),
+            residue: "porta_potty_residue"
+        }],
+        wallsToDestroy: 2,
+        floors: [
+            {
+                type: "wood",
+                hitbox: new RectangleHitbox(v(-7, -9), v(7, 9))
+            }
+        ],
+        obstacles: [
+            {
+                id: "flint_crate",
+                position: v(0, 0),
+                rotation: 0
+            },
+            {
+                id: "big_tree",
+                position: v(0, -8.7),
+                rotation: 0
+            },
+            {
+                id: "big_tree",
+                position: v(-5.65, 0),
+                rotation: 3
+            },
+            {
+                id: "big_tree",
+                position: v(5.7, 0),
+                rotation: 3
+            },
+            {
+                id: "big_tree",
+                position: v(-4.6, 8.7),
+                rotation: 2
+            }
+        ]
+    },
+    {
         idString: "house",
         name: "House",
         spawnHitbox: new ComplexHitbox([
