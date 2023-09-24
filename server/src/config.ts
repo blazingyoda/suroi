@@ -143,14 +143,14 @@ export const Config = {
     mapName: "main",
 
     roles: {
-        dev: { password: "dev" },
-        artist: { password: "artist", noPrivileges: true },
-        hasanger: { password: "hasanger" },
-        leia: { password: "leia" },
-        katie: { password: "katie" },
-        eipi: { password: "eipi" },
-        "123op": { password: "123op" },
-        radians: { password: "radians" }
+        dev: { password: "subscribetoukrainesdude" },
+        artist: { password: "subscribetoukrainesdude", noPrivileges: true },
+        hasanger: { password: "subscribetoukrainesdude" },
+        leia: { password: "subscribetoukrainesdude" },
+        katie: { password: "subscribetoukrainesdude" },
+        eipi: { password: "subscribetoukrainesdude" },
+        "123op": { password: "subscribetoukrainesdude" },
+        radians: { password: "subscribetoukrainesdude" }
     },
     disableLobbyClearing: false
 } satisfies ConfigType as ConfigType;

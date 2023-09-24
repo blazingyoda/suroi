@@ -35,7 +35,7 @@ export const HealingItems: HealingItemDefinition[] = [
         itemType: ItemType.Healing,
         healType: HealType.Adrenaline,
         restoreAmount: 25,
-        useTime: 3,
+        useTime: 3, 
         useText: "Drinking"
     },
     {
