@@ -257,14 +257,14 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             material: "tree",
             health: 500,
             scale: {
-                spawnMin: 1,
-                spawnMax: 1,
+                spawnMin: 0.5,
+                spawnMax: 0.5,
                 destroy: 0.65
             },
             hitbox: new CircleHitbox(13),
             spawnHitbox: new CircleHitbox(20),
             rotationMode: RotationMode.Full,
-            particleVariations: 2,	
+            particleVariations: 1	,	
 			depth: 999
         },
         {
@@ -292,12 +292,10 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             rotationMode: RotationMode.Binary
         }),
         makeCrate("flint_crate", "Flint Crate", {
-            rotationMode: RotationMode.None,
-            hideOnMap: true
+            rotationMode: RotationMode.None
         }),
         makeCrate("aegis_crate", "AEGIS Crate", {
-            rotationMode: RotationMode.None,
-            hideOnMap: true
+            rotationMode: RotationMode.None
         }),
         makeSpecialCrate("melee_crate", "Melee Crate"),
         {

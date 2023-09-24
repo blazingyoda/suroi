@@ -101,7 +101,7 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
         obstacles: [
             {
                 get id() {
-                    return weightedRandom(["porta_potty_toilet_open", "porta_potty_toilet_closed"], [0.7, 0.3]);
+                    return weightedRandom(["toilet", "used_toilet"], [0.7, 0.3]);
                 },
                 position: v(0, -5),
                 rotation: 0
@@ -137,8 +137,8 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
         idString: "Kopje",
         name: "Kopje patch",
         spawnHitbox: new RectangleHitbox(v(-60, -60), v(60, 60)),
-        ceilingHitbox: new RectangleHitbox(v(0, 0), v(0, 0)),
-        scopeHitbox: new RectangleHitbox(v(-7, -9), v(7, 9)),
+        ceilingHitbox: new ComplexHitbox([]),
+        scopeHitbox: new ComplexHitbox([]),
         floorImages: [{
             key: "nothing",
             position: v(0, 0)
@@ -156,8 +156,8 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
             }
         ],
         groundGraphics: [
-            { color: 0x77980e, bounds: new RectangleHitbox(v(-70, -70), v(70, 70)) },
-            { color: 0x5a7312, bounds: new RectangleHitbox(v(-15, -15), v(15, 15)) }
+            { color: 0x77980e, bounds: new RectangleHitbox(v(-50, -50), v(50, 50)) },
+            { color: 0x5a7312, bounds: new RectangleHitbox(v(-13, -13), v(13, 13)) }
         ],
         obstacles: [
             {
@@ -167,17 +167,17 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
             },
             {
                 id: "big_tree",
-                position: v(20, -65.7),
+                position: v(20, -40.7),
                 rotation: 0
             },
             {
                 id: "big_tree",
-                position: v(-60, 0),
+                position: v(-40, 0),
                 rotation: 3
             },
             {
                 id: "big_tree",
-                position: v(30, 50),
+                position: v(20, 35),
                 rotation: 2
             }
         ]
