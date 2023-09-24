@@ -787,6 +787,39 @@ export const Guns: GunDefinition[] = [
             maxDistance: 230
         }
     },
+	{
+        idString: "L86A2",
+        name: "L86A2",
+        itemType: ItemType.Gun,
+        ammoType: "556mm",
+        ammoSpawnAmount: 90,
+        capacity: 30,
+        reloadTime: 3,
+        fireDelay: 150,
+        switchDelay: 400,
+        speedMultiplier: 0.92,
+        recoilMultiplier: 0.8,
+        recoilDuration: 130,
+        fireMode: FireMode.Single,
+        shotSpread: 1,
+        moveSpread: 2.5,
+        length: 11.9,
+        fists: {
+            left: v(50, 2.5),
+            right: v(100, -2),
+            animationDuration: 100
+        },
+        image: { position: v(120, 1.5) },
+        particles: {
+            position: v(5, 0.5)
+        },
+        ballistics: {
+            damage: 26,
+            obstacleMultiplier: 0.70,
+            speed: 0.27,
+            maxDistance: 230
+        }
+    },
     {
         idString: "deathray",
         name: "Death Ray",
