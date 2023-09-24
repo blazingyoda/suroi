@@ -136,24 +136,28 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
     {
         idString: "Kopje",
         name: "Kopje patch",
-        spawnHitbox: new RectangleHitbox(v(-10, -12), v(10, 20)),
-        ceilingHitbox: new RectangleHitbox(v(-7, -9), v(7, 9)),
+        spawnHitbox: new RectangleHitbox(v(-60, -60), v(60, 60)),
+        ceilingHitbox: new RectangleHitbox(v(0, 0), v(0, 0)),
         scopeHitbox: new RectangleHitbox(v(-7, -9), v(7, 9)),
         floorImages: [{
-            key: "porta_potty_floor",
-            position: v(0, 1.5)
+            key: "nothing",
+            position: v(0, 0)
         }],
         ceilingImages: [{
-            key: "porta_potty_ceiling",
-            position: v(0, 0),
-            residue: "porta_potty_residue"
+            key: "nothing",
+            position: v(1024, 1024),
+            residue: "nothing"
         }],
-        wallsToDestroy: 2,
+        wallsToDestroy: 0,
         floors: [
             {
                 type: "wood",
                 hitbox: new RectangleHitbox(v(-7, -9), v(7, 9))
             }
+        ],
+        groundGraphics: [
+            { color: 0x77980e, bounds: new RectangleHitbox(v(-70, -70), v(70, 70)) },
+            { color: 0x5a7312, bounds: new RectangleHitbox(v(-15, -15), v(15, 15)) }
         ],
         obstacles: [
             {
@@ -163,22 +167,17 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
             },
             {
                 id: "big_tree",
-                position: v(0, -8.7),
+                position: v(20, -65.7),
                 rotation: 0
             },
             {
                 id: "big_tree",
-                position: v(-5.65, 0),
+                position: v(-60, 0),
                 rotation: 3
             },
             {
                 id: "big_tree",
-                position: v(5.7, 0),
-                rotation: 3
-            },
-            {
-                id: "big_tree",
-                position: v(-4.6, 8.7),
+                position: v(30, 50),
                 rotation: 2
             }
         ]

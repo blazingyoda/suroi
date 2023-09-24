@@ -265,7 +265,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             spawnHitbox: new CircleHitbox(20),
             rotationMode: RotationMode.Full,
             particleVariations: 2,	
-			depth: 7
+			depth: 999
         },
         {
             idString: "blueberry_bush",
