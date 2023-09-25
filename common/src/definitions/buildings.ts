@@ -162,10 +162,135 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
         obstacles: [
             {
                 id: "flint_crate",
-                position: v(0, 0),
+                position: v(6, 0),
+                rotation: 0
+            },
+			{
+                id: "flint_crate",
+                position: v(-6, 0),
+                rotation: 0
+            },
+			{
+                id: "regular_crate",
+                position: v(0, 10),
+                rotation: 0
+            },
+			{
+                id: "regular_crate",
+                position: v(0, -10),
                 rotation: 0
             },
             {
+                id: "big_bush",
+                position: v(0, 48),
+                rotation: 0
+            },
+			{
+                id: "big_bush",
+                position: v(10, 45),
+                rotation: 0
+            },
+			{
+                id: "big_bush",
+                position: v(20, 48),
+                rotation: 0
+            },	
+			{
+                id: "big_bush",
+                position: v(30, 42),
+                rotation: 0
+            },	
+			{
+                id: "big_bush",
+                position: v(40, 47),
+                rotation: 0
+            },	
+			{
+                id: "big_bush",
+                position: v(50, 40),
+                rotation: 0
+            },	
+			{
+                id: "big_bush",
+                position: v(-10, 45),
+                rotation: 0
+            },
+			{
+                id: "big_bush",
+                position: v(-20, 48),
+                rotation: 0
+            },	
+			{
+                id: "big_bush",
+                position: v(-30, 42),
+                rotation: 0
+            },	
+			{
+                id: "big_bush",
+                position: v(-40, 47),
+                rotation: 0
+            },	
+			{
+                id: "big_bush",
+                position: v(-50, 40),
+                rotation: 0
+            },	//first area
+            {
+                id: "big_bush",
+                position: v(0, -48),
+                rotation: 0
+            },
+			{
+                id: "big_bush",
+                position: v(10, -45),
+                rotation: 0
+            },
+			{
+                id: "big_bush",
+                position: v(20, -48),
+                rotation: 0
+            },	
+			{
+                id: "big_bush",
+                position: v(30, -42),
+                rotation: 0
+            },	
+			{
+                id: "big_bush",
+                position: v(40, -47),
+                rotation: 0
+            },	
+			{
+                id: "big_bush",
+                position: v(50, -40),
+                rotation: 0
+            },	
+			{
+                id: "big_bush",
+                position: v(-10, -45),
+                rotation: 0
+            },
+			{
+                id: "big_bush",
+                position: v(-20, -48),
+                rotation: 0
+            },	
+			{
+                id: "big_bush",
+                position: v(-30, -42),
+                rotation: 0
+            },	
+			{
+                id: "big_bush",
+                position: v(-40, -47),
+                rotation: 0
+            },	
+			{
+                id: "big_bush",
+                position: v(-50, -40),
+                rotation: 0
+            },				
+			{
                 id: "big_tree",
                 position: v(20, -40.7),
                 rotation: 0
@@ -175,6 +300,11 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
                 position: v(-40, 0),
                 rotation: 3
             },
+            {
+                id: "big_rock",
+                position: v(50, 0),
+                rotation: 3
+            },			
             {
                 id: "big_tree",
                 position: v(20, 35),

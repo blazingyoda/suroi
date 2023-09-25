@@ -216,6 +216,34 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             particleVariations: 2
         },
         {
+            idString: "big_rock",
+            name: "big Rock",
+            material: "stone",
+            health: 700,
+            scale: {
+                spawnMin: 5,
+                spawnMax: 5,
+                destroy: 0.95
+            },
+            hitbox: new CircleHitbox(12),
+            spawnHitbox: new CircleHitbox(13.5),
+            rotationMode: RotationMode.Full,
+        },	
+        {
+            idString: "big_rockm",
+            name: "big Rock but for map wtf suroi ur code is retarded",
+            material: "stone",
+            health: 700,
+            scale: {
+                spawnMin: 2.5,
+                spawnMax: 2.5,
+                destroy: 0.95
+            },
+            hitbox: new CircleHitbox(6),
+            spawnHitbox: new CircleHitbox(6.75),
+            rotationMode: RotationMode.Full,
+        },				
+        {
             idString: "flint_stone",
             name: "Flint Stone",
             material: "stone",
@@ -251,6 +279,22 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             particleVariations: 2,
             depth: 6
         },
+        {
+            idString: "big_bush",
+            name: "Big bush",
+            material: "bush",
+            health: 200,
+            scale: {
+                spawnMin: 5,
+                spawnMax: 5,
+                destroy: 0.8
+            },
+            hitbox: new CircleHitbox(4.2),
+            noCollisions: true,
+            rotationMode: RotationMode.Full,
+            particleVariations: 2,
+            depth: 6
+        },		
 		{
             idString: "big_tree",
             name: "big tree",
@@ -261,8 +305,23 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 spawnMax: 0.5,
                 destroy: 0.65
             },
-            hitbox: new CircleHitbox(13),
-            spawnHitbox: new CircleHitbox(20),
+            hitbox: new CircleHitbox(5),
+            spawnHitbox: new CircleHitbox(30.1),
+            rotationMode: RotationMode.Full,	
+			depth: 999
+        },
+		{
+            idString: "big_treem",
+            name: "big tree that spawns around the map",
+            material: "tree",
+            health: 500,
+            scale: {
+                spawnMin: 0.7,
+                spawnMax: 0.7,
+                destroy: 0.65
+            },
+            hitbox: new CircleHitbox(6.8),
+            spawnHitbox: new CircleHitbox(30.1),
             rotationMode: RotationMode.Full,
             particleVariations: 1	,	
 			depth: 999

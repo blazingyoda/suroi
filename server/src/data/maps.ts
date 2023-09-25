@@ -50,11 +50,11 @@ export const Maps: Record<string, MapDefinition> = {
         width: 1024,
         height: 1024,
         buildings: {
-            refinery: 1,
+            refinery: 0,
             warehouse: 3,
             house: 0,
-            porta_potty: 50,
-			Kopje: 2
+            porta_potty: 5,
+			Kopje: 3
         },
         obstacles: {
             oil_tank: 4,
@@ -63,14 +63,16 @@ export const Maps: Record<string, MapDefinition> = {
             pine_tree: 0,
             birch_tree: 0,
             rock: 200,
-            bush: 100,
+            big_bush: 50,
+			bush: 100,
             blueberry_bush: 0,
             barrel: 71,
             super_barrel: 21,
             melee_crate: 1,
             gold_rock: 2,
-			big_tree: 13,
-            flint_stone: 1
+			big_treem: 9,
+            flint_stone: 1,
+			big_rockm: 6
         },
         specialObstacles: {
             oil_tank: {

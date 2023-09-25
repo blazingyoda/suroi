@@ -303,6 +303,43 @@ export const Guns: GunDefinition[] = [
         }
     },
 	{
+        idString: "mosin",
+        name: "Mosin-Nagant",
+        itemType: ItemType.Gun,
+        ammoType: "762mm",
+        ammoSpawnAmount: 20,
+        capacity: 5,
+        reloadTime: 0.85,
+        singleReload: true,
+        fireDelay: 900,
+        switchDelay: 900,
+        speedMultiplier: 0.9,
+        recoilMultiplier: 0.45,
+        recoilDuration: 750,
+        fireMode: FireMode.Single,
+        shotSpread: 0.8,
+        moveSpread: 0.5,
+        canQuickswitch: true,
+        length: 11,
+        fists: {
+            left: v(145, -1),
+            right: v(65, 0),
+            animationDuration: 100
+        },
+        image: { position: v(105, 4) },
+        particles: {
+            position: v(4, 0.6)
+        },
+        ballistics: {
+            damage: 70,
+            obstacleMultiplier: 1,
+            speed: 0.33,
+            maxDistance: 250,
+            tracerWidth: 1.4,
+            tracerLength: 2.5
+        }
+    },
+	{
         idString: "svd",
         name: "SVD-63",
         itemType: ItemType.Gun,
