@@ -73,7 +73,7 @@ export const Maps: Record<string, MapDefinition> = {
 			big_treem: 9,
             flint_stone: 1,
 			big_rockm: 6,
-			tttt: 200
+			propanetank: 200
         },
         specialObstacles: {
             oil_tank: {
