@@ -373,6 +373,21 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             reflectBullets: true
         },
         {
+            idString: "propanetank",
+            name: "propane tank",
+            material: "metal",
+            health: 60,
+            scale: {
+                spawnMin: 1.0,
+                spawnMax: 1.0,
+                destroy: 0.5
+            },
+            hitbox: new CircleHitbox(1.25),
+            rotationMode: RotationMode.Full,
+            explosion: "barrel_explosion",
+            reflectBullets: true
+        },		
+        {
             idString: "super_barrel",
             name: "Super Barrel",
             material: "metal",
