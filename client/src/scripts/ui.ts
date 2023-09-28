@@ -97,8 +97,8 @@ export function setupUI(game: Game): void {
 
     const streamers = [
         {
-            name: "iMoRTaL_Mafia",
-            link: "https://www.twitch.tv/imortal_mafia"
+            name: "No one.",
+            link: "e"
         }
     ];
 

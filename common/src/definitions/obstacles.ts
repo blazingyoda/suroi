@@ -226,7 +226,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 destroy: 0.95
             },
             hitbox: new CircleHitbox(12),
-            spawnHitbox: new CircleHitbox(13.5),
+            spawnHitbox: new CircleHitbox(25),
             rotationMode: RotationMode.Full,
         },	
         {
@@ -237,9 +237,9 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             scale: {
                 spawnMin: 2.5,
                 spawnMax: 2.5,
-                destroy: 0.95
+                destroy: 2
             },
-            hitbox: new CircleHitbox(6),
+            hitbox: new CircleHitbox(5),
             spawnHitbox: new CircleHitbox(6.75),
             rotationMode: RotationMode.Full,
         },				
@@ -248,8 +248,8 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             name: "Flint Stone",
             material: "stone",
             health: 1000,
-            indestructible: false,
             noResidue: true,
+			hasLoot: true, 
             scale: {
                 spawnMin: 1.0,
                 spawnMax: 1.0,
@@ -287,7 +287,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             scale: {
                 spawnMin: 5,
                 spawnMax: 5,
-                destroy: 0.8
+                destroy: 1
             },
             hitbox: new CircleHitbox(4.2),
             noCollisions: true,
@@ -305,7 +305,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 spawnMax: 0.5,
                 destroy: 0.65
             },
-            hitbox: new CircleHitbox(5),
+            hitbox: new CircleHitbox(7),
             spawnHitbox: new CircleHitbox(30.1),
             rotationMode: RotationMode.Full,	
 			depth: 999
@@ -320,7 +320,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 spawnMax: 0.7,
                 destroy: 0.65
             },
-            hitbox: new CircleHitbox(6.8),
+            hitbox: new CircleHitbox(8),
             spawnHitbox: new CircleHitbox(30.1),
             rotationMode: RotationMode.Full,
             particleVariations: 1	,	
@@ -373,20 +373,20 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             reflectBullets: true
         },
         {
-            idString: "propanetank",
-            name: "propane tank",
+            idString: "savannahbarrel",
+            name: "Barrel 2",
             material: "metal",
             health: 60,
             scale: {
-                spawnMin: 1.0,
-                spawnMax: 1.0,
-                destroy: 0.5
+                spawnMin: 0.5,
+                spawnMax: 0.5,
+                destroy: 0.25
             },
-            hitbox: new CircleHitbox(1.25),
+            hitbox: new CircleHitbox(4),
             rotationMode: RotationMode.Full,
             explosion: "barrel_explosion",
             reflectBullets: true
-        },		
+        },
         {
             idString: "super_barrel",
             name: "Super Barrel",
@@ -1200,6 +1200,72 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             frames: {
                 particle: "furniture_particle"
             }
-        }
+        },
+        {
+            idString: "gun_mount_mosin",
+            name: "Gun Mount Mosin",
+            material: "wood",
+            health: 60,
+            scale: {
+                spawnMin: 1.0,
+                spawnMax: 1.0,
+                destroy: 0.95
+            },
+            hasLoot: true,
+            hitbox: new ComplexHitbox([
+                new RectangleHitbox(v(-4.1, -1.8), v(4.1, -0.85)), // Base
+                new RectangleHitbox(v(-0.39, -0.9), v(0.39, 1.85)), // Center post
+                new RectangleHitbox(v(-3.5, -0.9), v(-2.72, 1.85)), // Left post
+                new RectangleHitbox(v(2.8, -0.9), v(3.55, 1.85)) // Right post
+            ]),
+            rotationMode: RotationMode.Limited,
+            frames: {
+                particle: "furniture_particle"
+            }
+        },
+        {
+            idString: "gun_mount_tango",
+            name: "Gun Mount Tango 51",
+            material: "wood",
+            health: 60,
+            scale: {
+                spawnMin: 1.0,
+                spawnMax: 1.0,
+                destroy: 0.95
+            },
+            hasLoot: true,
+            hitbox: new ComplexHitbox([
+                new RectangleHitbox(v(-4.1, -1.8), v(4.1, -0.85)), // Base
+                new RectangleHitbox(v(-0.39, -0.9), v(0.39, 1.85)), // Center post
+                new RectangleHitbox(v(-3.5, -0.9), v(-2.72, 1.85)), // Left post
+                new RectangleHitbox(v(2.8, -0.9), v(3.55, 1.85)) // Right post
+            ]),
+            rotationMode: RotationMode.Limited,
+            frames: {
+                particle: "furniture_particle"
+            }
+        },		
+        {
+            idString: "gun_mount_blr",
+            name: "Gun Mount BLR 81",
+            material: "wood",
+            health: 60,
+            scale: {
+                spawnMin: 1.0,
+                spawnMax: 1.0,
+                destroy: 0.95
+            },
+            hasLoot: true,
+            hitbox: new ComplexHitbox([
+                new RectangleHitbox(v(-4.1, -1.8), v(4.1, -0.85)), // Base
+                new RectangleHitbox(v(-0.39, -0.9), v(0.39, 1.85)), // Center post
+                new RectangleHitbox(v(-3.5, -0.9), v(-2.72, 1.85)), // Left post
+                new RectangleHitbox(v(2.8, -0.9), v(3.55, 1.85)) // Right post
+            ]),
+            rotationMode: RotationMode.Limited,
+            frames: {
+                particle: "furniture_particle"
+            }
+        }				
     ]
 );

@@ -198,6 +198,27 @@ export const LootTables: Record<string, LootTable> = {
             { item: "mcx_spear", weight: 1 }
         ]
 	},	
+    gun_mount_blr: {
+        min: 1,
+        max: 1,
+        loot: [
+            { item: "blr", weight: 1 }
+        ]
+	},		
+    gun_mount_mosin: {
+        min: 1,
+        max: 1,
+        loot: [
+            { item: "mosin", weight: 1 }
+        ]
+	},
+    gun_mount_tango: {
+        min: 1,
+        max: 1,
+        loot: [
+            { item: "tango_51", weight: 1 }
+        ]
+	},		
 };
 
 export const LootTiers: Record<string, WeightedLoot[]> = {
@@ -212,6 +233,7 @@ export const LootTiers: Record<string, WeightedLoot[]> = {
 		{ item: "svd", weight: 0.3 },
         { item: "mini14", weight: 0.5 },
         { item: "vss", weight: 0.55},
+		{ item: "blr", weight: 9999 },
         { item: "mosin", weight: 0.45 },
         { item: "tango_51", weight: 0.1 }
     ],

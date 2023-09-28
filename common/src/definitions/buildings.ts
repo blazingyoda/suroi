@@ -61,7 +61,7 @@ export interface BuildingDefinition extends ObjectDefinition {
         residue?: string
     }>
 
-    // How many walls need to be broken to destroy the ceiling
+    // How many walls need to be broken to destroy the ceiling. Ukraines dude was here
     wallsToDestroy?: number
 
     floors: Array<{
@@ -91,7 +91,7 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
             position: v(0, 0),
             residue: "porta_potty_residue"
         }],
-        wallsToDestroy: 2,
+        wallsToDestroy: 3,
         floors: [
             {
                 type: "wood",
@@ -103,7 +103,7 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
                 get id() {
                     return weightedRandom(["toilet", "used_toilet"], [0.7, 0.3]);
                 },
-                position: v(0, -5),
+                position: v(0, -4),
                 rotation: 0
             },
             {
@@ -122,17 +122,59 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
                 rotation: 3
             },
             {
-                id: "porta_potty_door",
-                position: v(2.2, 8.8),
-                rotation: 0
+                id: "porta_potty_front_wall",
+                position: v(-5.6, 8.7),
+                rotation: 2
             },
             {
                 id: "porta_potty_front_wall",
-                position: v(-4.6, 8.7),
+                position: v(5.6, 8.7),
                 rotation: 2
-            }
+            }			
         ]
     },
+    {
+        idString: "hunting_perch",
+        name: "Hunting Perch",
+        spawnHitbox: new RectangleHitbox(v(-20, -22), v(20, 22)),
+        ceilingHitbox: new RectangleHitbox(v(-10, -12), v(10, 12)),
+        scopeHitbox: new RectangleHitbox(v(-10, -12), v(10, 12)),
+        floorImages: [{
+            key: "perch_floor",
+            position: v(0, 1.5)
+        }],
+        ceilingImages: [{
+            key: "perch_ceiling",
+            position: v(0, 0),
+            residue: "hunting_perch_residue"
+        }],
+        wallsToDestroy: 1,
+        floors: [
+            {
+                type: "wood",
+                hitbox: new RectangleHitbox(v(-7, -9), v(7, 9))
+            }
+        ],
+        obstacles: [
+            {
+                id: "porta_potty_sink_wall",
+                position: v(0, -10),
+                rotation: 90
+            },	
+            {
+                get id() {
+                    return weightedRandom(["gun_mount_blr", "gun_mount_mosin", "gun_mount_tango"], [0.8, 0.3, 9999]);
+                },
+                position: v(0, -8.6),
+                rotation: 0
+            },		
+            {
+                id: "porta_potty_sink_wall",
+                position: v(0, 11.5),
+                rotation: 270
+            }
+        ]
+    },	
     {
         idString: "Kopje",
         name: "Kopje patch",
@@ -157,7 +199,7 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
         ],
         groundGraphics: [
             { color: 0x77980e, bounds: new RectangleHitbox(v(-50, -50), v(50, 50)) },
-            { color: 0x5a7312, bounds: new RectangleHitbox(v(-13, -13), v(13, 13)) }
+            { color: 0x5a7312, bounds: new RectangleHitbox(v(-15, -15), v(15, 15)) }
         ],
         obstacles: [
             {

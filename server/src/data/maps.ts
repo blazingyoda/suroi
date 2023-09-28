@@ -47,40 +47,35 @@ interface MapDefinition {
 
 export const Maps: Record<string, MapDefinition> = {
     main: {
-        width: 1024,
-        height: 1024,
+        width: 888,
+        height: 888,
         buildings: {
             refinery: 0,
             warehouse: 3,
             house: 0,
-            porta_potty: 5,
+            porta_potty: 6,
+			hunting_perch: 11	,
 			Kopje: 3
         },
         obstacles: {
-            oil_tank: 4,
-            regular_crate: 95,
-            oak_tree: 80,
+            regular_crate: 65,
+            oak_tree: 60,
             pine_tree: 0,
             birch_tree: 0,
-            rock: 200,
+            rock: 100,
             big_bush: 50,
 			bush: 30,
             blueberry_bush: 0,
-            barrel: 71,
-            super_barrel: 21,
+            barrel: 50,
+            super_barrel: 16,
             melee_crate: 1,
             gold_rock: 2,
-			big_treem: 9,
+			big_treem: 10,
             flint_stone: 1,
-			big_rockm: 6,
-			propanetank: 200
+			big_rockm: 7,
+			savannahbarrel: 50
         },
         specialObstacles: {
-            oil_tank: {
-                count: 3,
-                radius: 200,
-                squareRadius: true
-            },
             aegis_crate: {
                 min: 3,
                 max: 4
