@@ -37,8 +37,7 @@ export const Ammos: AmmoDefinition[] = [
         // Potentially Ostentatious Weaponized Energetic Ruination
         idString: "power_cell",
         name: "P.O.W.E.R. cell",
-        itemType: ItemType.Ammo,
-        ephemeral: true
+        itemType: ItemType.Ammo
     }/*,
     {
         idString: "50ae",

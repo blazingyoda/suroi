@@ -305,7 +305,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
                 spawnMax: 0.5,
                 destroy: 0.65
             },
-            hitbox: new CircleHitbox(7),
+            hitbox: new CircleHitbox(5),
             spawnHitbox: new CircleHitbox(30.1),
             rotationMode: RotationMode.Full,	
 			depth: 999
