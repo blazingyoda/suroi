@@ -2,7 +2,28 @@
 import { type NewsPost } from "./newsHelper";
 
 export const news: NewsPost[] = [
-    {
+
+ {
+        date: 1694706686000,
+        author: "Ukraines dude",
+        title: "Return to form",
+        bannerImage: "./img/news/v0.11.0.png",
+        content: `Yo yo whats good bros, I dont care much to do a lore post here, reason 1 being canonically the things added in 2.0 were always here, and reason 2 idk the lore lol, but anyways, new stuff! 2 new POI's and 2 new guns!<br><br>
+
+Also smaller island lol<br><br>
+
+And finally, the flint stone drops loot now :) (30X IS NOT CLICKBAIT FINALLY)`,
+        longContent: `<h2>re-savannah mode v0.1.0</h2>
+
+<h3>New features & changes</h3>
+<ul>
+  <li>Check the changelog you nerd </li>
+</ul>
+
+Special thanks (once again) to Ukraines dude and Jason, we made this thing lol`
+    },
+ 
+ {
         date: 1694706686000,
         author: "H.A.Z.E.L",
         title: "Broadening our horizons",
