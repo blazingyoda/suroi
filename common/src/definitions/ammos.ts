@@ -39,12 +39,12 @@ export const Ammos: AmmoDefinition[] = [
         name: "P.O.W.E.R. cell",
         itemType: ItemType.Ammo,
         ephemeral: true
-    },
+    }/*,
     {
         idString: "50ae",
         name: ".50 AE",
         itemType: ItemType.Ammo
-    }/*,
+    },
     {
         idString: "127mm",
         name: "12.7mm",

@@ -46,14 +46,5 @@ export const HealingItems: HealingItemDefinition[] = [
         restoreAmount: 50,
         useTime: 5,
         useText: "Taking"
-    },
-    {
-        idString: "recorder",
-        name: "Tape Recorder",
-        itemType: ItemType.Healing,
-        healType: HealType.Health,
-        restoreAmount: -1,
-        useTime: 6,
-        useText: "Listening..."
-    }	
+    }
 ];
