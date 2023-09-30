@@ -625,7 +625,7 @@ export const Guns: GunDefinition[] = [
         ammoSpawnAmount: 80,
         capacity: 20,
         reloadTime: 2.75,
-        fireDelay: 170,
+        fireDelay: 87.6,
         switchDelay: 400,
         speedMultiplier: 0.92,
         recoilMultiplier: 0.65,
@@ -644,7 +644,7 @@ export const Guns: GunDefinition[] = [
             position: v(4, 0.5)
         },
         ballistics: {
-            damage: 24,
+            damage: 16,
             obstacleMultiplier: 1.5,
             speed: 0.3,
             maxDistance: 180,

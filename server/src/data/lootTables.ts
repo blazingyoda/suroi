@@ -51,9 +51,8 @@ export const LootTables: Record<string, LootTable> = {
         min: 1,
         max: 1,
         loot: [
-			{ item: "15x_scope", weight: 1 },
             { item: "basic_outfit", weight: 1 },
-			{ item: "stoner_63", weight: 1 }
+			{ item: "30x_scope", weight: 1 }
         ]
     },
     melee_crate: {

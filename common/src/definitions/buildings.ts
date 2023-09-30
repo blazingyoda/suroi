@@ -163,7 +163,7 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
             },	
             {
                 get id() {
-                    return weightedRandom(["gun_mount_blr", "gun_mount_mosin", "gun_mount_tango"], [0.6, 0.3, 0.1]);
+                    return weightedRandom(["gun_mount_blr", "gun_mount_mosin", "gun_mount_tango"], [0.6, 0.3, 0.05]);
                 },
                 position: v(0, -8.6),
                 rotation: 0
