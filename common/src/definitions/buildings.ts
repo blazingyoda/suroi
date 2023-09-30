@@ -167,13 +167,19 @@ export const Buildings = new ObjectDefinitions<BuildingDefinition>([
                 },
                 position: v(0, -8.6),
                 rotation: 0
-            },		
+            },			
             {
                 id: "porta_potty_sink_wall",
                 position: v(0, 11.5),
                 rotation: 270
-            }
-        ]
+            },
+        ],
+        lootSpawners: [
+            {
+                position: v(0, 0),
+                table: "box"
+            },
+        ]		
     },	
     {
         idString: "Kopje",

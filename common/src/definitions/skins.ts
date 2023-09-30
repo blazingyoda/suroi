@@ -89,6 +89,12 @@ export const Skins: SkinDefinition[] = [
         notInLoadout: true
     },
     {
+        idString: "Mansion",
+        name: "Casanova Silks",
+        itemType: ItemType.Skin,
+        notInLoadout: true
+    },	
+    {
         idString: "tomato_skin",
         name: "Tomato",
         itemType: ItemType.Skin

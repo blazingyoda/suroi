@@ -275,7 +275,6 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             hitbox: new CircleHitbox(4.2),
             noCollisions: true,
             rotationMode: RotationMode.Full,
-            variations: 2,
             particleVariations: 2,
             depth: 6
         },
@@ -292,7 +291,6 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             hitbox: new CircleHitbox(4.2),
             noCollisions: true,
             rotationMode: RotationMode.Full,
-            particleVariations: 2,
             depth: 6
         },		
 		{
@@ -322,8 +320,7 @@ export const Obstacles = new ObjectDefinitions<ObstacleDefinition>(
             },
             hitbox: new CircleHitbox(8),
             spawnHitbox: new CircleHitbox(30.1),
-            rotationMode: RotationMode.Full,
-            particleVariations: 1	,	
+            rotationMode: RotationMode.Full,	
 			depth: 999
         },
         {

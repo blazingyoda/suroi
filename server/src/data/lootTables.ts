@@ -51,7 +51,6 @@ export const LootTables: Record<string, LootTable> = {
         min: 1,
         max: 1,
         loot: [
-            { item: "basic_outfit", weight: 1 },
 			{ item: "30x_scope", weight: 1 }
         ]
     },
@@ -87,6 +86,16 @@ export const LootTables: Record<string, LootTable> = {
             { tier: "special_equipment", weight: 0.65 }
         ]
     },
+    hunting: {
+        min: 1,
+        max: 1,
+        loot: [
+            { tier: "4x_scope", weight: 1 },
+            { tier: "8x_scope", weight: 0.25 },
+            { tier: "15x_scope", weight: 0.65 },
+            { tier: "30x_scope", weight: 0.01 }			
+        ]
+    },	
     large_drawer: {
         min: 1,
         max: 1,
